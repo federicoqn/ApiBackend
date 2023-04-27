@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>onboarding_backend.Domain</RootNamespace>
+    <AssemblyName>onboarding_backend.Domain</AssemblyName>
+  </PropertyGroup>
+	<PropertyGroup>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NoWarn>$(NoWarn);1591</NoWarn>
+	</PropertyGroup>
+	<ItemGroup>
+	  <PackageReference Include="Andreani.Onboarding.Event" Version="6.0.0" />
+	  <PackageReference Include="Andreani.OnboardingVideo.Events" Version="1.0.2" />
+	</ItemGroup>
+</Project>

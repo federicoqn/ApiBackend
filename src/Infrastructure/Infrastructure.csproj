@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<TargetFramework>net6.0</TargetFramework>
+	<RootNamespace>onboarding_backend.Infrastructure</RootNamespace>
+	<AssemblyName>onboarding_backend.Infrastructure</AssemblyName>
+  </PropertyGroup>
+	<PropertyGroup>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NoWarn>$(NoWarn);1591</NoWarn>
+	</PropertyGroup>
+
+  <ItemGroup>
+	<Folder Include="EventHandler\" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<PackageReference Include="Andreani.ARQ.CQRS" Version="6.1.0" />
+	<PackageReference Include="Andreani.Onboarding.Event" Version="6.0.0" />
+	<PackageReference Include="Andreani.OnboardingVideo.Events" Version="1.0.2" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.8">
+	  <PrivateAssets>all</PrivateAssets>
+	  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	</PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application\Application.csproj" />
+  </ItemGroup>
+
+</Project>
